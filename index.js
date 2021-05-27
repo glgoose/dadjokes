@@ -29,8 +29,7 @@ dropdownItems.forEach(dropdownItem =>
       el.classList.add('is-active')
     }
     source = el.innerText
-    const selectedEl = document.querySelector('.dropdown-selected')
-    selectedEl.innerText = source
+    document.querySelector('.dropdown-selected').innerText = source
 
     toggleDropdown()
   })
