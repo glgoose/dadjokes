@@ -15,18 +15,39 @@
     <title>dadjokes</title>
   </head>
   <body>
-    <header>
-      <select name="source" id="source">
+    <header class="is-flex is-justify-content-right mt-3 mr-3">
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button
+            class="button"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu2"
+          >
+            <span class="dropdown-selected">icanhaz</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item">reddit</a>
+            <a class="dropdown-item is-active">icanhaz</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <select name="source" id="source">
         <option value="">source</option>
         <option value="reddit">reddit</option>
         <option value="icanhaz">icanhazdadjokes</option>
-      </select>
+      </select> -->
     </header>
-    <main class="container is-desktop has-text-centered">
+    <main class="container is-desktop has-text-centered has-text-white-ter">
       <button class="random button is-danger is-light mt-6">
         random dad joke
       </button>
-      <p class="dadjoke has-text-white-ter mt-5"></p>
+      <p class="dadjoke mt-5"></p>
       <!-- <div class="level mt-6">
         <div class="search level-item">
           <p class="control">
